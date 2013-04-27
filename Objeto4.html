@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objeto 4</title>
+	<script>
+		/*document.write("Linea de texto n&uacute;mero 1..." + "<br>");
+		document.write("Linea de texto n&uacute;mero 2..." + "<br>");
+		document.write("Linea de texto n&uacute;mero 3..." + "<br>");*/
+
+		with (document)
+		{
+			write("Linea de texto n&uacute;mero 1..." + "<br>");
+			write("Linea de texto n&uacute;mero 2..." + "<br>");
+			write("Linea de texto n&uacute;mero 3..." + "<br>");
+			write("Linea de texto n&uacute;mero 4..." + "<br>");
+		}
+
+		function tocaImagen()
+		{
+			alert("Hax hecho click en el thumbnail!");
+		}
+
+		function sobreImagen()
+		{
+			alert("Haz colocado el cursor sobre la imagen!!);
+		}
+	</script>
+</head>
+<body>
+	<h1>Pagina de ejemplo</h1>
+	<img id="tmbPython" src="img/tmbPython.jpg" alt="Python" onClick="tocaImagen()" onMouseOver="sobreImagen()" style="float:left; margin-right:10px;">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, nam, amet quibusdam rem tempore quasi architecto perferendis iste explicabo doloremque pariatur tempora similique harum autem suscipit fugiat sit dignissimos quisquam.</p>
+</body>
+</html>

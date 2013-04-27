@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Variable THIS</title>
+		<style>
+		div{
+			float: left;
+
+			width:250px;
+			height: 250px;
+
+			margin: 15px;	
+			background-color:orange;
+			border:thin solid gray;
+		}
+		</style>
+		<script type="text/javascript">
+			function divClick(caja){
+				alert("Has presionado la caja " + caja.id);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="caja1" onClick="divClick(this)">Derecho Adjetivo</div>
+		<div id="caja2" onClick="divClick(this)">Derecho Sustantivo</div>
+		<div id="caja3" onClick="divClick(this)">Articulo 123 de la const. con las reformas de diciembre de 2012</div>
+		<div id="caja4" onClick="divClick(this)"></div>
+	</body>
+</html>

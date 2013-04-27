@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calcular</title>
+	<!-- Estilos -->
+	<style>
+		#dvRes{
+			height:18px;
+		}
+	</style>
+
+	<!-- Script JS -->
+	<script>
+		function Calcular(N1, N2){
+			var Res = N1 * N2;
+			document.getElementById("dvRes").innerHTML=Res;
+		}
+
+		function Actualizar(){
+			var N1b = document.getElementById("tbxN1").value;
+			var N2b = document.getElementById("tbxN2").value;
+			var Res2 = N1b * N2b;
+			document.getElementById("dvRes").innerHTML=Res2;
+			document.getElementById("tR").innerHTML=Res2;	
+		}
+		
+	</script>
+
+</head>
+<body>
+	<h1>Calcular</h1>
+	<br><br>
+	<label>N&uacute;mero 1: <input type="text" id="tbxN1" value="5" size="1" maxlength="2" onChange="Actualizar()" tabindex="1"></label>
+	<br><br>
+	<label>N&uacute;mero 2: <input type="text" id="tbxN2" value="7" size="1" maxlength="2" onChange="Actualizar()" tabindex="2"  accesskey="n"></label>
+	<br><br>
+	<div id="dvRes"></div>
+	<br><br>
+	<input type="button" id="btnCalcular" value="Calcular" onClick="Actualizar()" tabindex="3"  accesskey="r">
+	<br><br>
+	<h3 id="tR">Resultado </h3>
+</body>
+</html>

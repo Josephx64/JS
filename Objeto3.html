@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Objeto 3</title>
+
+	<script>
+		var objUsuario1 = new usuario('Jose', 'Resendiz', '27');
+		var objUsuario2 = new usuario('Luis', 'Zedillo', '25');
+		var objUsuario3	= new usuario('Ivan', 'Garcia', '22');
+
+		function usuario(Nombre, Apellido, Edad)
+		{
+			this.Nombre		= Nombre;
+			this.Apellido	= Apellido;
+			this.Edad			= Edad;
+			/*alert("El usuario 1 se llama " + this.Nombre + ' ' + this.Apellido + ' y tiene ' + this.Edad);*/
+		}
+
+		alert("El usuario 1 se llama " + objUsuario1.Nombre + ' ' + objUsuario1.Apellido + ' y tiene ' + objUsuario1.Edad);
+		alert("El usuario 2 se llama " + objUsuario2.Nombre + ' ' + objUsuario2.Apellido + ' y tiene ' + objUsuario2.Edad);
+		alert("El usuario 3 se llama " + objUsuario3.Nombre + ' ' + objUsuario3.Apellido + ' y tiene ' + objUsuario3.Edad);
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

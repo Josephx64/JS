@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Componente Textarea</title>
+	<script>
+		function Agregar(){
+			//asignar a la variable Fruta el valor del textbox tbxFruta 
+			var Fruta = document.getElementById("tbxFruta").value;
+			//asignar a la variable nuevaFruta el valor de la variable Fruta y un salto de linea
+			var nuevaFruta = document.createTextNode(Fruta + "\n");
+			//asignar a la variable textArea el area de texto txaFrutas
+			var textArea = document.getElementById("txaFrutas");
+			//agregar a la variable textArea un hijo con el valor de la variable nuevaFruta
+			textArea.appendChild(nuevaFruta);
+			//textArea.scrollTop = textArea.scrollHeight;
+
+		}
+
+		function Pasar(){
+			//asignar a la variable Fruta el valor del textbox tbxFruta 
+			var Fruta = document.getElementById("tbxFruta").value;
+			//asignar a la variable nuevaFruta el valor de la variable Fruta y un salto de linea
+			var nuevaFruta = document.createTextNode(Fruta);
+			//asignar a la variable selectFrutas el area de texto slctFrutas
+			var selectFrutas = document.getElementById("slctFrutas");
+			//agregar a la variable selectFrutas un hijo con el valor de la variable nuevaFruta
+			selectFrutas.appendChild(nuevaFruta);
+			//textArea.scrollTop = textArea.scrollHeight;
+			
+		}
+
+	</script>
+</head>
+<body>
+
+<label>Escriba una fruta: 
+	<br>
+	<input type="text" id="tbxFruta" value="" size="12" maxlength="15" tabindex="1" accesskey="f">
+</label>
+<br><br>
+
+<input type="button" id="btnAgregar" value="Agregar" onClick="Agregar()">
+<br><br>
+
+<label>Frutas: 
+	<br>
+	<textarea id="txaFrutas" cols="25" rows="3"></textarea> 
+</label>
+<br><br>
+
+<input type="button" id="btnPasar" value="Pasar" onClick="Pasar()">
+<br><br>
+
+<select id="sltFrutas">
+	<!-- <option value="">Frutas</option> -->
+</select>
+
+</body>
+</html>

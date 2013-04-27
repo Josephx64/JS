@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="UTF-8"/>
+	<head>
+		<title>Ejemplo Radio Button</title>
+		<script>
+			function colorFondo(){
+				for (i=0; i<frmColores.rdoColores.length; i++){
+					if(frmColores.rdoColores[i].checked)
+					break;
+				}
+				document.bgColor = frmColores.rdoColores[i].value;
+			}
+		</script>
+	</head>
+
+	<body>
+	<h2>Ejemplo de Radiobotones</h2>
+	<br/>
+	<form name="frmColores">
+		<input type="radio" name="rdoColores" value="ffffff" placeholder="1" checked> Blanco</br>
+		<input type="radio" name="rdoColores" value="teal" placeholder="2"> Turquesa </br>
+		<input type="radio" name="rdoColores" value="maroon" placeholder="3"> Mar&oacute;n </br>
+		<input type="radio" name="rdoColores" value="olive" placeholder="4"> Olivo </br></br>
+		<input type="button" name="btnCambiar" value="Cambiar color" onClick="colorFondo()">
+	</form>		
+	</body>
+</html>

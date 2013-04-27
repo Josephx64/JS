@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Objeto JavaScript 1</title>
+	<script type="text/javascript">
+		var objGato = new gato('Ringo');
+		var objGato2 = new gato('Bronco');
+
+		function gato(nombre)
+		{
+			this.nombre = nombre;
+		}
+
+		function nombreGato(){
+			alert("El nombre del gato es " + objGato.nombre);
+			alert("El gato dos se llama " + objGato2.nombre);
+		}
+
+		function nombrePerro(nombreP)
+		{
+			alert("El nombre del perro es " + nombreP);
+		}
+	</script>
+</head>
+<body>
+
+	<button onClick="nombreGato()">Gato</button>
+	<br/>
+	<button id="Fido" name="Killer" onClick="nombrePerro(this.name)">Killer</button>
+	<br/>
+	<button id="Firulais" name="Firulais" onClick="nombrePerro(this.name)">Firulais</button>
+ 
+</body>
+</html>

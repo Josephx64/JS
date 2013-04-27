@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Objeto 2 JavaScript</title>
+	
+	<script>
+		var objGato1 = new gato('Ringo');
+		var objGato2 = new gato('Travesura');
+		
+		function gato(nombre)
+		{
+			this.nombre = nombre;
+			this.maulla = function(){
+				alert(this.nombre + " Miauuuu....!");
+			}
+		}
+
+		alert("El nombre del misifus es " + objGato1.nombre);
+		alert("El segundo gato se llama " + objGato2.nombre);
+		objGato1.maulla();
+	</script>
+  </head>
+<body>
+
+ 
+</body>
+</html>
